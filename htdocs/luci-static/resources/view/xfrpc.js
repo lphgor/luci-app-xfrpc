@@ -5,7 +5,6 @@
 'require rpc';
 'require dom';
 'require tools.widgets as widgets';
-'require tools.github as github';
 
 var callServiceList = rpc.declare({
 	object: 'service',
@@ -39,7 +38,7 @@ function renderStatus(isRunning) {
 	if (isRunning) {
 		renderHTML += String.format(spanTemp, 'green', _("xfrpc client"), _("running..."));
 	} else {
-		renderHTML += String.format(spanTemp, 'red', _("xfprc client"), _("not running..."));
+		renderHTML += String.format(spanTemp, 'red', _("xfrpc client"), _("not running..."));
 	}
 
 	return renderHTML;
@@ -103,8 +102,7 @@ return view.extend({
 		var web_proxy = ['http', 'https'];
 
 		m = new form.Map('xfrpc', _('xfrpc'));
-		m.description = github.desc(
-			'xfrpc is a c language frp client for frps.', 'liudf0716', 'xfrpc');
+		m.description = _('xfrpc is a c language frp client for frps.');
 		
 		s = m.section(form.NamedSection, '_status');
 		s.anonymous = true;
