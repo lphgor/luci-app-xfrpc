@@ -1,5 +1,6 @@
 ## luci-app-xfrpc
-该项目为xfrpc的luci配置界面
+该项目为 [xfrpc](https://github.com/liudf0716/xfrpc)
+的luci配置界面
 
 ## 视频演示
 
