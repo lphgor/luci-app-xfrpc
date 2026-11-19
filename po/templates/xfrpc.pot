@@ -252,7 +252,6 @@ msgid "stop remote plugin service"
 msgstr ""
 
 #: applications/luci-app-xfrpc/htdocs/luci-static/resources/view/xfrpc.js:104
-#: applications/luci-app-xfrpc/root/usr/share/luci/menu.d/luci-app-xfrpc.json:3
 msgid "xfrpc"
 msgstr ""
 
